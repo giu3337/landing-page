@@ -1,0 +1,37 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: #282828;
+} */
+
+nav{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+  
+}
+
+.img-logo{
+    width: 45px;
+    height: 45px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
