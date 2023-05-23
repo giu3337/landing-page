@@ -1,0 +1,11 @@
+/* Animations */
+
+
+/* Scroll Behavior Smooth*/
+
+/* Scroll Padding Top */
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
