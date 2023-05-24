@@ -2,7 +2,6 @@
 
 
 /* Scroll Behavior Smooth*/
-
 /* Scroll Padding Top */
 
 html{
@@ -64,4 +63,109 @@ html{
 .navbar-list li a:hover::after{
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+
+/* Carrito  */
+
+
+.cart-icon{transition: all 0.2s ease-out;}
+
+.cart-icon:hover{
+    color: var(--electric);
+    border-color: var(--electric);
+    transition: all 0.2s ease-in;
+
+}
+
+
+/* Botones Carrito */
+
+.quantity-handler{
+    transition: all 0.2s ease-in;
+}
+
+.quantity-handler:hover{
+    cursor: pointer;
+    color: var(--electric);
+    transition: all 0.2s ease-in;
+}
+
+
+/* Botones comprar */
+
+.btn-add, .hero-info a{
+    transition: all 0.2s ease-out;
+}
+
+
+.btn-add:hover, .hero-info a:hover{
+    background-color: var(--electric);
+    transition: all 0.2s ease-in;
+}
+
+.btn-load{
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+
+}.btn-load:hover{
+  background-color: var(--electric);
+  color: var(--text-white);
+  transition: all 0.2s ease-in;
+}
+
+/* Animaciones  */
+
+/* Fade */
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide arriba */
+
+@keyframes slide-up {
+    from{
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Slide Right */
+
+@keyframes slide-right {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+/* Animations h1 */
+
+.hero-info h1{
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+
+/* Animations p  */
+
+.hero-info p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+/* Animation be nucber */
+
+.hero-info a{
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.4s;
 }

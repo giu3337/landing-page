@@ -528,8 +528,10 @@ main{
     gap: 30px;
     height: calc(100vh - 65px);
     overflow-y: scroll;
-    display: none;
+    /* display: none; */
     z-index: 2;
+    transform: translate(200%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
   }
   
   /* /OCULTAR BARRA DE SCROLL DEL CARRITO/ */
@@ -640,5 +642,6 @@ main{
   
   /* /Toggle del carro/ */
   #cart-toggle:checked + .cart {
-    display: flex;
+    transform: translate(0%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
   }
